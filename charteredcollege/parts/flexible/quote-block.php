@@ -1,0 +1,1 @@
+/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/parts/flexible/quote-block.php
