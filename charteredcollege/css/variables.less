@@ -1,1 +1,276 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/css/variables.less
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/**
+ * LESS variables and mixins for the project are kept in here.
+ *
+ */
+
+
+ /* Colours */
+@body: #666666;
+@white: #ffffff;
+@stroke: #DEDEDE;
+@light: #666666;
+@bg: #EFEFEF;
+@navy: #1B2342;
+@blue: #5EB3E4;
+@yellow: #FBC771;
+@pink: #EE7EA0;
+@red: #F65058;
+
+.color-white {
+	color: @white !important;
+}
+
+.color-navy {
+	color: @navy !important;
+}
+
+.color-blue {
+	color: @blue !important;
+}
+
+.color-yellow {
+	color: @yellow !important;
+}
+
+.color-pink {
+	color: @pink !important;
+}
+
+.color-red {
+	color: @red !important;
+}
+
+.background-white {
+	background-color: @white;
+}
+
+.background-grey {
+	background-color: @bg;
+}
+
+.background-navy {
+	background-color: @navy;
+}
+
+.background-blue {
+	background-color: @blue;
+}
+
+.background-yellow {
+	background-color: @yellow;
+}
+
+.background-pink {
+	background-color: @pink;
+}
+
+.background-half-navy {
+	background: linear-gradient(to top, @navy 0%, @navy 70%, @white 70%, @white 100%);
+
+	@media only screen and (max-width: @mobile) {
+		background: linear-gradient(to top, @navy 0%, @navy 85%, @white 85%, @white 100%);
+	}
+}
+
+
+/* Borders */
+
+.border-top {
+	border-top: 1px solid @stroke;
+}
+
+.border-right {
+	border-right: 1px solid @stroke;
+}
+
+.border-bottom {
+	border-bottom: 1px solid @stroke;
+}
+
+
+/* Transitions */
+
+.transition {
+	transition: all 0.5s easing;
+}
+
+
+/* Layout */
+
+@spacing: 9rem; /* Variable used to apply consistent spacing to blocks. */
+@spacing-mobile: 5rem;
+
+.spacing-both {
+	padding: @spacing 0;
+
+	@media only screen and (max-width: @tablet) {
+		padding: @spacing-mobile 0;
+	}
+}
+
+.spacing-top {
+	padding-top: @spacing;
+
+	@media only screen and (max-width: @tablet) {
+		padding-top: @spacing-mobile;
+	}
+}
+
+.spacing-bottom {
+	padding-bottom: @spacing;
+
+	@media only screen and (max-width: @tablet) {
+		padding-bottom: @spacing-mobile;
+	}
+}
+
+.spacing-both-small {
+	padding: calc(@spacing - 4.5rem) 0;
+}
+
+.spacing-top-small {
+	padding-top: calc(@spacing - 4.5rem);
+}
+
+.spacing-bottom-small {
+	padding-bottom: calc(@spacing - 4.5rem);
+}
+
+.text-padding {
+	padding: 2.5rem 2rem;
+}
+
+.box-padding {
+	padding: 5rem 3.5rem;
+}
+
+.item-margin {
+	margin-bottom: 2.5rem;
+}
+
+.item-margin-mobile {
+
+	@media only screen and (max-width: @mobile) {
+		margin-bottom: 2.5rem;
+	}
+}
+
+
+/* Transitions */
+
+.transition {
+	transition: all 0.1s linear;
+}
+
+
+/* Helper classes */
+
+.vertically-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&.vertically-center--not-on-mobile {
+
+		@media only screen and (max-width: @mobile) {
+			top: 0;
+			transform: translateY(0);
+		}
+	}
+}
+
+.visible {
+	display: inherit;
+}
+
+.hidden {
+	display: none;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+
+	.aligner-item {
+
+		&.aligner-item--top {
+			align-self: flex-start;
+		}
+
+		&.aligner-item--bottom {
+			align-self: flex-end;
+		}
+	}
+}
+
+.float-right {
+	float: right;
+}
+
+
+/* Breakpoints */
+
+@mobile: 600px;
+@tablet: 1020px;
+
+
+
+/* Responsive iframes, objects and embeds */
+
+.flexible-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* WordPress classes */
+
+.alignleft {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+
+/* Micro ClearFix Mixin */
+
+.clearfix {
+	zoom: 1;
+	
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	
+	&:after {
+		clear: both;
+	}
+}

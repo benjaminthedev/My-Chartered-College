@@ -1,1 +1,127 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/acf-json/group_5b56f498ebc60.json
+{
+    "key": "group_5b56f498ebc60",
+    "title": "Site Options",
+    "fields": [
+        {
+            "key": "field_5b56f4a1cac82",
+            "label": "Archive Banners",
+            "name": "archive_banners",
+            "type": "gallery",
+            "instructions": "Upload banners that will be randomly used on archive templates. Upload an image that is at least 1200px wide and a PNG file.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_5b56f505cac83",
+            "label": "Introduction",
+            "name": "main_index_introduction",
+            "type": "textarea",
+            "instructions": "Add a short introduction to the main series listing page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5cee3805c66f1",
+            "label": "Events Introduction",
+            "name": "events_introduction",
+            "type": "textarea",
+            "instructions": "Add a short introduction to the main events listing page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e9b0c56a0854",
+            "label": "Events Introduction - only CCoT",
+            "name": "events_introduction_internal",
+            "type": "textarea",
+            "instructions": "Add a short introduction to the listing for CCoT events only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e284aed3b429",
+            "label": "Courses Introduction",
+            "name": "courses_introduction",
+            "type": "textarea",
+            "instructions": "Add a short introduction to the main events listing page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 40,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "The custom fields that allow the banner and banner text on the main index to be edited.",
+    "modified": 1587219593
+}

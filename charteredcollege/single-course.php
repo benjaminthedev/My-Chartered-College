@@ -1,1 +1,34 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/single-course.php
+<?php
+/**
+ * Single Course
+ *
+ * The template for single events.
+ *
+ * @package TAC Framework
+ * @since TAC Framework 1.0
+ */
+
+get_header(); ?>
+
+
+	<?php
+	while ( have_posts() ) : the_post();
+
+		// Get the page header.
+		get_template_part( 'parts/banner', 'course' );
+
+		// Get the event content.
+		get_template_part( 'parts/content', 'course' );
+
+		// Get the related posts.
+		get_template_part( 'parts/share-alt' );
+
+		// Get the related posts.
+		get_template_part( 'parts/related-courses' );
+
+	endwhile; ?>
+
+</article>
+
+<?php
+get_footer();

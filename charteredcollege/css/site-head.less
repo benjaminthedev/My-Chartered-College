@@ -1,1 +1,147 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/css/site-head.less
+/* ==========================================================================
+   Site head
+   ========================================================================== */
+
+/**
+ * Site header styles.
+ *
+ */
+
+.site-head {
+	border-bottom: 1px solid @stroke;
+	
+	.site-head__logo {
+		width: 16rem;
+		height: auto;
+		padding: 3.5rem 0 3.1rem;
+
+		@media only screen and (max-width: @mobile) {
+			padding: 2.5rem 0;
+		}
+	}
+
+	.main-nav {
+		padding: 0;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+
+			li {
+				display: inline-block;
+				margin: 0 1.5rem;
+
+				a {
+					font-size: 1.6rem;
+					line-height: 10rem;
+					color: @navy;
+					text-decoration: none;
+					display: block;
+					border-bottom: 1px solid transparent;
+				}
+
+				&:hover a {
+					border-bottom-color: @navy;
+				}
+
+				&.current-menu-item a,
+				&.current_page_item a {
+					border-bottom-color: @navy;
+					font-weight: 400;
+				}
+			}
+		}
+
+		&.main-nav--supplementary {
+			.clearfix();
+
+			ul {
+				float: right;
+
+				@media only screen and (max-width: @mobile) {
+					display: none;
+				}
+
+				li {
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+
+					a {
+						color: @body;
+					}
+				}
+			}
+
+			.search-toggle {
+				float: right;
+				background: url(img/icon-search-navy.svg) no-repeat right center;
+				background-size: 2.4rem auto;
+				font-size: 1.6rem;
+				width: 2.4rem;
+				height: 2.4rem;
+				margin: 4rem 0 3.5rem 2rem;
+				cursor: pointer;
+
+				@media only screen and (max-width: @mobile) {
+					margin: 2.5rem 0 2.5rem 2rem;
+				}
+			}
+
+			.menu-open {
+				margin: 4rem 0 4rem 2rem;
+				width: 2.4rem;
+				height: 2.4rem;
+				background: url(img/icon-nav-open.svg) no-repeat center;
+				float: right;
+				cursor: pointer;
+				display: none;
+
+				@media only screen and (max-width: @mobile) {
+					margin: 2.5rem 0 2.5rem 2rem;
+				}
+			}
+		}
+	}
+}
+
+.mobile-nav {
+	background: @navy;
+	padding: 10rem 0;
+
+	.menu-close {
+		position: absolute;
+		top: -6rem;
+		right: 1.5rem;
+		width: 2.4rem;
+		height: 2.4rem;
+		background: url(img/icon-close-white.svg) no-repeat center;
+		background-size: cover;
+		cursor: pointer;
+		text-indent: -9999px;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+
+			a {
+				font-size: 1.8rem;
+				line-height: 2.8rem;
+				padding: 1rem 0;
+				display: block;
+				border-bottom: 1px solid @white;
+				color: @white;
+				text-decoration: none;
+			}
+
+			&:first-of-type a {
+				border-top: 1px solid @white;
+			}
+		}
+	}
+}

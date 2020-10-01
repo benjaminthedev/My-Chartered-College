@@ -1,1 +1,75 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/css/site-foot.less
+/* ==========================================================================
+   Site foot
+   ========================================================================== */
+
+/**
+ * Site footer styles.
+ *
+ */
+
+.site-foot {
+	padding: 8rem 0 3.5rem;
+	word-wrap: break-word;
+
+	@media only screen and (max-width: @mobile) {
+		padding-top: 5rem;
+	}
+
+	.site-foot__item {
+		margin-bottom: 2.5rem;
+
+		.site-foot__logo {
+			width: 10rem;
+			height: auto;
+
+			@media only screen and (max-width: @mobile) {
+				width: 8rem;
+			}
+		}
+
+		p,
+		ul {
+			font-size: 1.4rem;
+			line-height: 2rem;
+			color: @white;
+			list-style: none;
+			margin-bottom: 2rem;
+
+			&:last-of-type {
+				margin: 0;
+			}
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.site-foot__credit {
+		padding-top: 4.5rem;
+
+		@media only screen and (max-width: @mobile) {
+			padding-top: 2.5rem;
+		}
+
+		p {
+			font-size: 1.3rem;
+			line-height: 1.9rem;
+			color: @white;
+			margin: 0;
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+}

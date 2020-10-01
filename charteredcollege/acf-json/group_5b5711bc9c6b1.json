@@ -1,1 +1,94 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/acf-json/group_5b5711bc9c6b1.json
+{
+    "key": "group_5b5711bc9c6b1",
+    "title": "References",
+    "fields": [
+        {
+            "key": "field_5b5712751fc0d",
+            "label": "References",
+            "name": "references",
+            "type": "repeater",
+            "instructions": "Add one to many references here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5b5712841fc0e",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Reference",
+            "sub_fields": [
+                {
+                    "key": "field_5b5712841fc0e",
+                    "label": "Reference Text",
+                    "name": "reference_text",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5b5712931fc0f",
+                    "label": "Reference Link",
+                    "name": "reference_link",
+                    "type": "url",
+                    "instructions": "A fully qualified link including http\/https:\/\/. Leave blank if this reference doesn't link to an external website.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:research-digests"
+            }
+        ],
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:research-reviews"
+            }
+        ],
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:windows-into-the-classroom"
+            }
+        ]
+    ],
+    "menu_order": 40,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "The fields to add references to specific categories of article.",
+    "modified": 1532433433
+}
