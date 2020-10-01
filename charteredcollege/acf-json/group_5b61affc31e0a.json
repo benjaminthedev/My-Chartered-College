@@ -1,1 +1,45 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/acf-json/group_5b61affc31e0a.json
+{
+    "key": "group_5b61affc31e0a",
+    "title": "Video URL",
+    "fields": [
+        {
+            "key": "field_5b61b02f56acd",
+            "label": "Video URL",
+            "name": "video_embed",
+            "type": "url",
+            "instructions": "Add the embed URL of the video. E.g. https:\/\/www.youtube.com\/embed\/ZnuwB35GYMY",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:video-resources"
+            }
+        ]
+    ],
+    "menu_order": 22,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "The flexible content blocks that can be used to build up articles.",
+    "modified": 1570012701
+}

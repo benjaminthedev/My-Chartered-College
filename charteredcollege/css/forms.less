@@ -1,1 +1,115 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/css/forms.less
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+
+/* Buttons */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	font-family: inherit;
+	font-size: 1.6rem;
+	display: inline-block;
+	text-align: center;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	height: 4.2rem;
+	line-height: 4.2rem;
+	padding: 0 3rem;
+	white-space: nowrap;
+	box-sizing: border-box;
+	background: @pink;
+	color: @white !important;
+	border: 1px solid @pink;
+	border-radius: 2rem;
+	.transition();
+
+	&:hover {
+		background: darken(@pink, 15%);
+		border-color: darken(@pink, 15%);
+		outline: 0;
+	}
+
+	&.button--secondary {
+		background: @navy;
+		color: @white !important;
+		border-color: @navy;
+
+		&:hover {
+			background: lighten(@navy, 15%);
+			border-color: lighten(@navy, 15%);
+		}
+	}
+}
+
+
+/* Input fields */
+
+input[type="email"],
+input[type="search"],
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+	font-family: inherit;
+	font-size: 1.5rem;
+	font-weight: 300;
+	border: none;
+	height: 4.2rem;
+	padding: 0.6rem 1rem;
+	/* The 6px vertically centers text on FF, ignored by Webkit */
+	box-shadow: none;
+	background: none;
+	border: 1px solid @stroke;
+	background: @stroke;
+}
+
+input[type="email"],
+input[type="search"],
+input[type="text"],
+textarea {
+	appearance: none;
+	/* Removes awkard default styles on some inputs */
+}
+
+textarea {
+	min-height: 10rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+}
+
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+	border: none;
+	outline: 0;
+}
+
+
+/* Checkboxes and Radio Buttons */
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+
+/* Labels and Fieldsets */
+
+label,
+legend {
+	display: block;
+}
+
+fieldset {
+	border-width: 0;
+	padding: 0;
+}

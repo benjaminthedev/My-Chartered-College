@@ -1,1 +1,40 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/css/style.less
+/*!
+Theme Name: Chartered College
+Version: 1.0
+Author: TAC
+Author URI: http://www.tac-design.co.uk
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Framework styles. */
+@import "normalize.less";
+@import "grid-12.less";
+@import "block-grid.less";
+@import "forms.less";
+@import "visibility.less";
+
+/* Vendor styles. */
+@import "owl.less";
+@import "pushy.less";
+@import "featherlight.less";
+@import "fontawesome.less";
+@import "modal-video.less";
+
+/* Project styles. */
+@import "variables.less";
+@import "typography.less";
+@import "site.less"; /* Project component styles, ensure this is always last. */
+
+html {
+	-webkit-text-size-adjust: none;
+	font-size: 62.5%;
+	line-height: 1.8;
+}
+
+body { 
+	font-family: 'museo-sans', sans-serif;
+	font-weight: 300;
+	display: none;
+	word-wrap: break-word;
+}

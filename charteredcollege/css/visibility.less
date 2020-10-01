@@ -1,1 +1,168 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/css/visibility.less
+/* ==========================================================================
+   Visibility
+   ========================================================================== */
+
+/**
+ * Classes to target specific screen sizes and device types.
+ * For example, to hide an element on small screens.
+ *
+ * Example HTML:
+ *
+ * <div class="hide-for-small">
+ *     <div>This will be hidden on small screens.</div>
+ * </div>
+ *
+ */
+
+
+/* Standard (large) display targeting */
+
+.show-for-small,
+.show-for-medium,
+.show-for-medium-down,
+.hide-for-large,
+.hide-for-large-up,
+.show-for-xlarge,
+.show-for-print {
+	display: none !important;
+}
+
+.hide-for-small,
+.hide-for-medium,
+.hide-for-medium-down,
+.show-for-large,
+.show-for-large-up,
+.hide-for-xlarge,
+.hide-for-print {
+	display: inherit !important;
+}
+
+
+/* Very large display targeting */
+
+@media only screen and (min-width: 1441px) {
+	
+	.hide-for-small,
+	.hide-for-medium,
+	.hide-for-medium-down,
+	.hide-for-large,
+	.show-for-large-up,
+	.show-for-xlarge {
+		display: inherit !important;
+	}
+	
+	.show-for-small,
+	.show-for-medium,
+	.show-for-medium-down,
+	.show-for-large,
+	.hide-for-large-up,
+	.hide-for-xlarge {
+		display: none !important;
+	}
+}
+
+
+/* Medium display targeting */
+
+@media only screen and (max-width: 1021px) and (min-width: 601px) {
+	
+	.hide-for-small,
+	.show-for-medium,
+	.show-for-medium-down,
+	.hide-for-large,
+	.hide-for-large-up,
+	.hide-for-xlarge {
+		display: inherit !important;
+	}
+	
+	.show-for-small,
+	.hide-for-medium,
+	.hide-for-medium-down,
+	.show-for-large,
+	.show-for-large-up,
+	.show-for-xlarge {
+		display: none !important;
+	}
+}
+
+
+/* Small display targeting */
+
+@media only screen and (max-width: 600px) {
+	
+	.show-for-small,
+	.hide-for-medium,
+	.show-for-medium-down,
+	.hide-for-large,
+	.hide-for-large-up,
+	.hide-for-xlarge {
+		display: inherit !important;
+	}
+	
+	.hide-for-small,
+	.show-for-medium,
+	.hide-for-medium-down,
+	.show-for-large,
+	.show-for-large-up,
+	.show-for-xlarge {
+		display: none !important;
+	}
+}
+
+
+/* Orientation targeting */
+
+.show-for-landscape,
+.hide-for-portrait {
+	display: inherit !important;
+}
+
+.hide-for-landscape,
+.show-for-portrait {
+	display: none !important;
+}
+
+@media screen and (orientation: landscape) {
+	
+	.show-for-landscape,
+	.hide-for-portrait {
+		display: inherit !important;
+	}
+	
+	.hide-for-landscape,
+	.show-for-portrait {
+		display: none !important;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	
+	.show-for-portrait,
+	.hide-for-landscape {
+		display: inherit !important;
+	}
+	
+	.hide-for-portrait,
+	.show-for-landscape {
+		display: none !important;
+	}
+}
+
+
+/* Touch-enabled device targeting */
+
+.show-for-touch {
+	display: none !important;
+}
+
+.hide-for-touch {
+	display: inherit !important;
+}
+
+.touch .show-for-touch {
+	display: inherit !important;
+}
+
+.touch .hide-for-touch {
+	display: none !important;
+}

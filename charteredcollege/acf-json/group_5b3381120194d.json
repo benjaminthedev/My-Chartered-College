@@ -1,1 +1,72 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/acf-json/group_5b3381120194d.json
+{
+    "key": "group_5b3381120194d",
+    "title": "Category Images",
+    "fields": [
+        {
+            "key": "field_5b5593edd8c08",
+            "label": "Banner",
+            "name": "category_bg",
+            "type": "image",
+            "instructions": "The background image used on the category archive page. Upload a PNG that is at least 1200px in width.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 1200,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "png"
+        },
+        {
+            "key": "field_5b33813ab23bb",
+            "label": "Image",
+            "name": "category_img",
+            "type": "image",
+            "instructions": "Upload an image that is at least 900px in width and 600px in height. This is used as a featured image for this category and is shown in archive pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 900,
+            "min_height": 600,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Allows users to add featured images to categories.",
+    "modified": 1532347473
+}

@@ -1,1 +1,146 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/acf-json/group_5e2826b2b46f9.json
+{
+    "key": "group_5e2826b2b46f9",
+    "title": "Course Info",
+    "fields": [
+        {
+            "key": "field_5e2826b2d03d0",
+            "label": "Is the course open for registration?",
+            "name": "course_is_open",
+            "type": "true_false",
+            "instructions": "Check this box to make the course open for registration. If the box is unticked the course will be set as closed and a link to the course will be shown instead.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e2826b2d03e6",
+            "label": "Date",
+            "name": "course_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5e2826b2d0420",
+            "label": "Month",
+            "name": "course_month",
+            "type": "select",
+            "instructions": "Select the month in which the course starts. This will be used for front end filters.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "january": "January",
+                "february": "February",
+                "march": "March",
+                "april": "April",
+                "may": "May",
+                "june": "June",
+                "july": "July",
+                "august": "August",
+                "september": "September",
+                "october": "October",
+                "november": "November",
+                "december": "December"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e2826b2d04a4",
+            "label": "Short description",
+            "name": "course_short_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 100,
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5e2826b2d04f0",
+            "label": "Registration link",
+            "name": "course_registration_link",
+            "type": "url",
+            "instructions": "The link to the course registration.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e2829b3bb400",
+            "label": "Course link",
+            "name": "course_link",
+            "type": "url",
+            "instructions": "The link to the online course.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "course"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Fields for single-event.php",
+    "modified": 1579690586
+}

@@ -1,1 +1,48 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/php_errorlog
+[17-Oct-2018 08:24:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:24:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:26:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:26:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:28:09 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:28:09 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:29:12 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[17-Oct-2018 08:29:12 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[09-Feb-2019 05:12:26 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[09-Feb-2019 05:12:26 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[08-Mar-2019 10:53:03 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11
+[22-Jun-2020 03:19:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/charte69/public_html/my/wp-content/themes/charteredcollege/index.php on line 11

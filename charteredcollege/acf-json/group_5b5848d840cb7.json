@@ -1,1 +1,81 @@
-/var/www/vhosts/my.chartered.college/httpdocs/wp-content/themes/charteredcollege/acf-json/group_5b5848d840cb7.json
+{
+    "key": "group_5b5848d840cb7",
+    "title": "Article Info & Titles",
+    "fields": [
+        {
+            "key": "field_5b5848f7db9f7",
+            "label": "Short Title",
+            "name": "short_title",
+            "type": "text",
+            "instructions": "Add a shortened version of the article title that will be used in archives and on the home page. Maximum 50 characters.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 65
+        },
+        {
+            "key": "field_5b58576a9a6ee",
+            "label": "Sub Title",
+            "name": "sub_title",
+            "type": "text",
+            "instructions": "A short sub-title that introduces the article and appears alongside the first block of copy. Maximum 100 characters.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 100
+        },
+        {
+            "key": "field_5b5857fe05114",
+            "label": "Author",
+            "name": "author",
+            "type": "text",
+            "instructions": "The name of the person who wrote this article.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "The short title field that is used to display a shortened version of the article title in archives.",
+    "modified": 1532516381
+}
